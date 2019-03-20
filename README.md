@@ -21,12 +21,12 @@ Once terraform is done, make note of the ID and secret in the terminal this is n
 Terraform will spin up the instance, install hashcat, copy over the password/fuse conf for the S3 bucket connection, place it in the correct directories, copy over the crackme, and run hashcat. Once hashcat is completed, the cracked.txt file will be cat to the terminal. 
 
 #### Todos
-1. Edit Cloud_crack/config/.passwd-s3fs file, place the ID and secret from the S3 bucket section.
+1. Edit Cloud_crack/config/passwd-s3fs file, place the ID and secret from the S3 bucket section.
 2. Edit Cloud_crack/crack/crackme.txt
-3. Place SSH key or Generate one in ssh_keys directory. The private key needs to be named ec2_host_key and public key ec2_host_key.pub. There is a Powershell script that will generate a key in Cloud_crack\Gen-keys.ps1/
+3. Place SSH key or Generate one in ssh_keys directory. The private key needs to be named ec2_host_key and public key ec2_host_key.pub. There is a Powershell script that will generate a key in Cloud_crack\scripts\Gen-keys.ps1
 4. Edit Cloud/cloudcrack.tf file:
  - Change instance if desired
- - Change hash_op to options you are going to use *if you forgot the options check Cloud_crack/README.md
+ - Change hash_op to hash cat options you are going to use or specify in the command line *if you forgot the options check Cloud_crack/README.md
  - Change word_lists to the names of the files in your bucket
  - Change bucket_name to the name of the bucket in the S3 module
 5. Run Terraform:
