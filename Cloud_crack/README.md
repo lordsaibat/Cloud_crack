@@ -8,7 +8,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 - [ Options ] -
 
  Options Short / Long           | Type | Description                                          | Example
-================================+======+======================================================+=======================
+--------------------------------|------|------------------------------------------------------|----
  -m, --hash-type                | Num  | Hash-type, see references below                      | -m 1000
  -a, --attack-mode              | Num  | Attack-mode, see references below                    | -a 3
  -V, --version                  |      | Print version                                        |
@@ -103,7 +103,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 - [ Hash modes ] -
 
       # | Name                                             | Category
-  ======+==================================================+======================================
+  ------|--------------------------------------------------|-----------
     900 | MD4                                              | Raw Hash
       0 | MD5                                              | Raw Hash
    5100 | Half MD5                                         | Raw Hash
@@ -348,7 +348,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 - [ Outfile Formats ] -
 
   # | Format
- ===+========
+ ---|--------
   1 | hash[:salt]
   2 | plain
   3 | hash[:salt]:plain
@@ -368,7 +368,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 - [ Rule Debugging Modes ] -
 
   # | Format
- ===+========
+ ---|--------
   1 | Finding-Rule
   2 | Original-Word
   3 | Original-Word:Finding-Rule
@@ -377,7 +377,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 - [ Attack Modes ] -
 
   # | Mode
- ===+======
+ ---|------
   0 | Straight
   1 | Combination
   3 | Brute-force
@@ -387,7 +387,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 - [ Built-in Charsets ] -
 
   ? | Charset
- ===+=========
+ ---|---------
   l | abcdefghijklmnopqrstuvwxyz
   u | ABCDEFGHIJKLMNOPQRSTUVWXYZ
   d | 0123456789
@@ -400,7 +400,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 - [ OpenCL Device Types ] -
 
   # | Device Type
- ===+=============
+ ---|------
   1 | CPU
   2 | GPU
   3 | FPGA, DSP, Co-Processor
@@ -408,7 +408,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 - [ Workload Profiles ] -
 
   # | Performance | Runtime | Power Consumption | Desktop Impact
- ===+=============+=========+===================+=================
+ ---|-------------|---------|-------------------|----------------
   1 | Low         |   2 ms  | Low               | Minimal
   2 | Default     |  12 ms  | Economic          | Noticeable
   3 | High        |  96 ms  | High              | Unresponsive
@@ -418,7 +418,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 
   Attack-          | Hash- |
   Mode             | Type  | Example command
- ==================+=======+==================================================================
+ ------------------|-------|---------------------
   Wordlist         | $P$   | hashcat -a 0 -m 400 example400.hash example.dict
   Wordlist + Rules | MD5   | hashcat -a 0 -m 0 example0.hash example.dict -r rules/best64.rule
   Brute-Force      | MD5   | hashcat -a 3 -m 0 example0.hash ?a?a?a?a?a?a
