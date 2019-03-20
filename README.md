@@ -1,7 +1,7 @@
 # Cloud Crack
 
 ## Background
-Password cracking rigs are expensive and sometimes not utilized a lot. So one way to still be able to still crack passwords is to use AWS. This project utilizes terraform to spin up infrastructure quickly, crack the passwords, cat it out, and destroy the infrastructure. 
+Password cracking rigs are expensive and sometimes not utilized a lot. One way to be able to still crack passwords is to use AWS. This project utilizes terraform to spin up infrastructure quickly, crack the passwords, cat it out, and destroy the infrastructure. 
 
 ## Steps
 ### Setup Password Bucket
