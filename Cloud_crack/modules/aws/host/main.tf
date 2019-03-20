@@ -40,7 +40,7 @@ resource "aws_instance" "ec2_host" {
      }
 
      provisioner "file" {
-	       source      = "./config/.passwd-s3fs"
+	       source      = "./config/passwd-s3fs"
          destination = "~/passwd-s3fs"
 		
         connection {
