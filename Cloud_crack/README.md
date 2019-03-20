@@ -1,7 +1,7 @@
-#Example of running command
+# Example of running command
 terraform.exe apply -var "hash_op=-m 5600" & terraform.exe destroy
 
-#All the examples
+# All the examples
 
 Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...
 
