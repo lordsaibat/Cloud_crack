@@ -6,7 +6,7 @@ Password cracking rigs are expensive and sometimes not utilized a lot. One way t
 ## Steps
 ### Setup Password Bucket
 #### Background
-In order to save time on getting the instance spun up we rely on an S3 bucket to store your password list(s). The module will create the S3 bucket based on your input, upload the files, create an IAM user/group, and generate bucket credentials to use in the instance. This module only needs to be ran once, it can be ran multiple times to upload different files. 
+In order to save time on getting the instance spun up we rely on an S3 bucket to store your password list(s). The module will create the S3 bucket based on your input, upload the files, create an IAM user/group, and generate bucket credentials to use in the instance. This module only needs to be ran once, it can be ran multiple times to upload different files. If you have an S3 bucket and IAM credentials you can skip this step.
 
 ##### Todos
 1. Place your files in the S3/files directory (I have included two as an example). 
